@@ -1,21 +1,23 @@
-# Pulumi Infrastructure Description
+# Pulumi GKE Sandbox
 
 ## Intension
 
-Have all resources considered as infrastructure contained in one repository and managed
-by one tool.
+Provide a playground for testing gke setups.
 
 ## Getting started
 
 - Install mise: https://mise.jdx.dev/getting-started.html
 - Inside of the repository root run `mise run install` to install the project dependencies.
+- Login to google cloud by running
+  - `gcloud config set project <YOUR_GCP_PROJECT_ID>`
+  - `gcloud auth application-default login`
 - Fill out the missing values inside `.mise.local.toml`.
 
 ### Introduction to mise-en-place
 
 > Project Site: https://github.com/jdx/mise
 
-Mise-en-place (frech for setup) takes care of managing the project dependencies, allows
+Mise-en-place (french for setup) takes care of managing the project dependencies, allows
 running tasks like `make` and automatically sets up the python virtual environment.
 To see all available commands run `mise tasks`.
 
@@ -39,3 +41,7 @@ If you find yourself in a place where the project seems to behave strange or you
 dependencies are broken, you can reset the project environment by running `mise run clean`.
 This will remove the virtual environment but not the `.mise.local.toml`. Afterwards you
 can run `mise run install` to reinstall the project dependencies.
+
+## Topics
+
+- [Conventional Commit Messages](docs/conventional_commit_messages.md)
