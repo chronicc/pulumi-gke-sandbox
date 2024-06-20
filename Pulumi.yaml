@@ -1,6 +1,6 @@
 ---
-name: pulumi-template
-description: Full infrastructure description for a pulumi project.
+name: pulumi-gke-sandbox
+description: A playground for testing gke setups.
 main: src/
 runtime:
   name: python

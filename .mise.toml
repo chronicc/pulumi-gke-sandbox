@@ -1,10 +1,14 @@
 [env]
 '_'.python.venv.create = true
 '_'.python.venv.path = ".venv"
+GOOGLE_PROJECT = "skilful-display-427011-p5"
 
 [tools]
+k9s = "latest"
+kubectl = "1.27"
 pulumi = "3"
 python = "3"
+gcloud = "latest"
 
 [settings]
 experimental = true
