@@ -1,3 +1,6 @@
+gitpython
 pulumi
+pulumi-docker
 pulumi-gcp
 pulumi-kubernetes
+pyyaml

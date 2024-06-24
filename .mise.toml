@@ -2,6 +2,7 @@
 '_'.python.venv.create = true
 '_'.python.venv.path = ".venv"
 GOOGLE_PROJECT = "skilful-display-427011-p5"
+USE_GKE_GCLOUD_AUTH_PLUGIN = "True"
 
 [tools]
 k9s = "latest"
